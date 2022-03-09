@@ -1,5 +1,5 @@
-Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_hsem.o: \
- C:/Users/lemin/STM32Cube/Repository/STM32Cube_FW_WB_V1.8.0/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_hsem.c \
+Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_uart_ex.o: \
+ C:/Users/lemin/STM32Cube/Repository/STM32Cube_FW_WB_V1.8.0/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.c \
  ../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal.h \
  ../../Inc/stm32wbxx_hal_conf.h \
  ../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/stm32wbxx_hal_dma.h \

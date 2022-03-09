@@ -18,7 +18,9 @@ C:/Users/lemin/STM32Cube/Repository/STM32Cube_FW_WB_V1.8.0/Drivers/STM32WBxx_HAL
 C:/Users/lemin/STM32Cube/Repository/STM32Cube_FW_WB_V1.8.0/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc.c \
 C:/Users/lemin/STM32Cube/Repository/STM32Cube_FW_WB_V1.8.0/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_rcc_ex.c \
 C:/Users/lemin/STM32Cube/Repository/STM32Cube_FW_WB_V1.8.0/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim.c \
-C:/Users/lemin/STM32Cube/Repository/STM32Cube_FW_WB_V1.8.0/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.c 
+C:/Users/lemin/STM32Cube/Repository/STM32Cube_FW_WB_V1.8.0/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.c \
+C:/Users/lemin/STM32Cube/Repository/STM32Cube_FW_WB_V1.8.0/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.c \
+C:/Users/lemin/STM32Cube/Repository/STM32Cube_FW_WB_V1.8.0/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.c 
 
 OBJS += \
 ./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal.o \
@@ -35,7 +37,9 @@ OBJS += \
 ./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_rcc.o \
 ./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_rcc_ex.o \
 ./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_tim.o \
-./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_tim_ex.o 
+./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_tim_ex.o \
+./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_uart.o \
+./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_uart_ex.o 
 
 C_DEPS += \
 ./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal.d \
@@ -52,7 +56,9 @@ C_DEPS += \
 ./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_rcc.d \
 ./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_rcc_ex.d \
 ./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_tim.d \
-./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_tim_ex.d 
+./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_tim_ex.d \
+./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_uart.d \
+./Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_uart_ex.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -86,4 +92,8 @@ Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_tim.o: C:/Users/lemin/STM32Cube/Repos
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32WB55xx -c -I../../../../../../../Drivers/BSP/P-NUCLEO-WB55.Nucleo -I../../../../../../../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc -I../../Inc -I../../../../../../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_tim.d" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
 Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_tim_ex.o: C:/Users/lemin/STM32Cube/Repository/STM32Cube_FW_WB_V1.8.0/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_tim_ex.c
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32WB55xx -c -I../../../../../../../Drivers/BSP/P-NUCLEO-WB55.Nucleo -I../../../../../../../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc -I../../Inc -I../../../../../../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_tim_ex.d" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
+Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_uart.o: C:/Users/lemin/STM32Cube/Repository/STM32Cube_FW_WB_V1.8.0/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart.c
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32WB55xx -c -I../../../../../../../Drivers/BSP/P-NUCLEO-WB55.Nucleo -I../../../../../../../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc -I../../Inc -I../../../../../../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_uart.d" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
+Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_uart_ex.o: C:/Users/lemin/STM32Cube/Repository/STM32Cube_FW_WB_V1.8.0/Drivers/STM32WBxx_HAL_Driver/Src/stm32wbxx_hal_uart_ex.c
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32WB55xx -c -I../../../../../../../Drivers/BSP/P-NUCLEO-WB55.Nucleo -I../../../../../../../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc -I../../Inc -I../../../../../../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32WBxx_HAL_Driver/stm32wbxx_hal_uart_ex.d" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
 
